@@ -1,3 +1,11 @@
 """
 Tests the palindrome module
 """
+import pytest
+
+from palindrome import is_Palindrome
+
+
+def test_ValueError():
+    with pytest.raises(ValueError):
+        is_Palindrome(10)
