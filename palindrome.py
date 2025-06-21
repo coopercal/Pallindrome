@@ -10,6 +10,16 @@ def is_Palindrome(value):
     if value == "":
         return False
     else:
-        return True
+        d = deque()
+        for x in value:
+            d.append(x)
+        e = deque(reversed(d))
+        if d == e:
+            print("true")
+            return True
+        if d != e:
+            print("false")
+            return False
 
-is_Palindrome("A")
+
+is_Palindrome("abc")

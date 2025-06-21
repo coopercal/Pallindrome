@@ -18,3 +18,6 @@ def test_returnsTrueWithA():
 
 def test_returnsTrueWithBB():
     assert is_Palindrome("bb") == True
+
+def test_returnsFalseWithABC():
+    assert is_Palindrome("abc") == False
