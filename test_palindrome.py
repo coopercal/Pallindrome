@@ -11,7 +11,10 @@ def test_ValueError():
         is_Palindrome(10)
 
 def test_returnsFalseWithEmptyString():
-    assert is_Palindrome("") == "False"
+    assert is_Palindrome("") == False
 
 def test_returnsTrueWithA():
-    assert is_Palindrome("a") == "True"
+    assert is_Palindrome("a") == True
+
+def test_returnsTrueWithBB():
+    assert is_Palindrome("bb") == True
