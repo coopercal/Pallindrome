@@ -22,8 +22,11 @@ def test_returnsTrueWithBB():
 def test_returnsFalseWithABC():
     assert is_Palindrome("abc") == False
 
-def test_returnsFalseWithLaval():
+def test_returnsTrueWithLaval():
     assert is_Palindrome("laval") == True
 
 def test_returnsFalseWithToronto():
     assert is_Palindrome("toronto") == False
+
+def test_returnsTrueWithAble():
+    assert is_Palindrome("Able was I ere I saw Elba") == True

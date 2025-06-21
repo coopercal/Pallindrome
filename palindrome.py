@@ -10,10 +10,13 @@ def is_Palindrome(value):
     if value == "":
         return False
     else:
+        value = value.lower()
         d = deque()
         for x in value:
             d.append(x)
+        print(d)
         e = deque(reversed(d))
+        print(e)
         if d == e:
             print("true")
             return True
@@ -22,4 +25,4 @@ def is_Palindrome(value):
             return False
 
 
-is_Palindrome("abc")
+is_Palindrome("Able was I ere I saw Elba")
