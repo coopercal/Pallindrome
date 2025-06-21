@@ -12,3 +12,6 @@ def test_ValueError():
 
 def test_returnsFalseWithEmptyString():
     assert is_Palindrome("") == "False"
+
+def test_returnsTrueWithA():
+    assert is_Palindrome("a") == "True"
